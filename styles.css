@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 3%;
+}
+header .logo img{
+    width: 3em;
+    height: 3em;
+}
+header ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+header ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.container, .container-card{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e3;
+    padding: 4em 3%;
+}
+.container .content-text{
+    width: 50%;
+    height: 100%;
+}
+.container .content-text #title{
+    font-size: 3em;
+    color: #000000;
+    font-weight: 800;
+}
+.container .content-text #paragrafo{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #000000;
+}
+.container .content-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.container .content-img img{
+    width: 400px;
+    height: 100%;
+}
+.container-fundo{
+    width: 100%;
+    height: 300px;
+    background-image: url('./img/fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-fundo img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.container-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.container-card .card{
+    padding: 20px 30px;
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: #121214;
+    text-decoration: none;
+}
+.container-card .card img{
+    width: 100%;
+}
+.container-card .card h2{
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #ffffff;
+}
+.container-card .card p{
+    font-size: 1em;
+    margin: 20px 0;
+    font-weight: 500;
+    color: #ffffff;
+}
+.container-card .card .preco{
+    font-size: 19px;
+    font-weight: 300;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e3;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+}
+footer .content-footer{
+    width: 50%;
+    height: 100%;
+}
+footer .content-footer h3{
+    font-size: 2em;
+    margin: 20px 0;
+}
+footer .content-footer span{
+    font-size: 20px;
+    font-weight: 800;
+}
+footer .content-footer p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    width: 90%;
+}
+footer .map{
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+footer .map h3{
+    font-size: 2em;
+    margin: 20px 0;
+}
+footer .map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ############################################################################################################## */
+/* segunda pagina */
+/* ############################################################################################################## */
+
+.main-card{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: #e3e3e3;
+    padding: 6em 3%;
+}
+.main-card .content-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-card .content-img{
+    width: 50%;
+    height: 100%;
+}
+.main-card .content-img .img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 20px 2px #0000002d;
+    border-radius: 20px;
+}
+.main-card .content-img .img img{
+    width: 100%;
+    height: 100%;
+}
+.main-card .content-texts{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-card .content-texts .text{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 20px 2px #0000002d;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-card .content-texts .text .itens-tamanho{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-card .content-texts .text .itens-tamanho p{
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+}
+.main-card .content-texts h1{
+    font-size: 2em;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.main-card .content-texts h4{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+.main-card .content-texts h3{
+    font-size: 1.3em;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.main-card .content-texts .parcela{
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.main-card .content-texts .cor{
+    font-size: 1em;
+    font-weight: 900;
+    margin: 10px 0;
+}
+.main-card .content-texts button{
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 900;
+    margin: 20px 0;
+}
